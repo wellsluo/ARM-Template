@@ -3,7 +3,7 @@
 
 resource "azurestack_resource_group" "azsrg" {
     name     = "RG_Terraform"
-    location = "shanghai"
+    location = "local"
 }
 
 resource "azurestack_managed_disk" "disk" {

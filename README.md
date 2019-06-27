@@ -1,2 +1,2 @@
-# ARM-Template
-ARM template for Azure and Azure Stack
+# Azure Stack
+Automation and management tools for Azure Stack.

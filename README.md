@@ -6,3 +6,6 @@ ARM templates to deploy resource to Azure Stack.
 
 ## PowerShell
 PowerShell script for automation or management of Azure Stack resources.
+
+## Terraform
+Terraform template for Azure Stack. 

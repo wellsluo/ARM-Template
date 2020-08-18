@@ -80,7 +80,7 @@ To create a VM with managed disks, you no longer need to create the storage acco
 
 - The `apiVersion` is a version for "virtualMachines" resource type which supports managed disks.
 - `osDisk` and `dataDisks` no longer refer to a specific URI for the VHD.
-- When deploying without specifying additional properties, the disk will use a storage type based on the size of the VM. For example, if you are using a VM size that supports premium storage (sizes with "s" in their name such as Standard_D2s_v3) then premium disks will be configured by default. You can change this by using the sku setting of the disk to specify a storage type.
+- When deploying without specifying additional properties, the disk will use a storage type based on the size of the VM. For example, if you are using a VM size that supports premium storage (sizes with "s" in their name such as Standard_DS2_v2) then premium disks will be configured by default. You can change this by using the sku setting of the disk to specify a storage type.
 - If no name for the disk is specified, it takes the format of `<VMName>_OsDisk_1_<randomstring>` for the OS disk and `<VMName>_disk<#>_<randomstring>` for each data disk.
   - If a VM is being created from a custom image then the default settings for storage account type and disk name are retrieved from the disk properties defined in the custom image resource. These can be overridden by specifying values for these in the template.
 - By default, disk caching is Read/Write for the OS disk and None for data disks.
